@@ -1,0 +1,20 @@
+{
+  "1": {
+    "symbol": "ETH",
+    "name": "Ethereum",
+    "decimals": 18,
+    "chainId": 1,
+    "logoURI": "https://tokens.1inch.io/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png",
+    "coingeckoId": "ethereum",
+    "tokensURI": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/tokenlists/ethereum.json"
+  },
+  "56": {
+    "symbol": "BNB",
+    "name": "BNB",
+    "decimals": 18,
+    "chainId": 56,
+    "logoURI": "https://tokens.1inch.io/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c_1.png",
+    "coingeckoId": "binancecoin",
+    "tokensURI": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/tokenlists/bsc.json"
+  }
+}
