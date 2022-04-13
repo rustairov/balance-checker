@@ -14,22 +14,14 @@ interface IProps {
 
 const TokensList = ({ tokens }: IProps) => (
     <List>
-        {tokens.map((token) => (
-            <ListItem key={token.coingeckoId}>
+        {tokens.map((token, i) => (
+            <ListItem key={i}>
                 <ListItemAvatar>
-                    <Avatar src={token.logoURI} />
+                    <Avatar src={token.logo} />
                 </ListItemAvatar>
                 <ListItemText
-                    primary={`${ethers.utils.formatUnits(token.balance, token.decimals)} ${token.symbol}`}
-                    secondary={`$${
-                        Number(
-                            ethers.utils.formatUnits(
-                                // @ts-ignore
-                                token.balance.mul(Math.round(token.price)),
-                                token.decimals
-                            )
-                        ).toFixed(2)
-                    }`}
+                    primary={`${ethers.utils.formatUnits(token.balance.toString(), token.decimals)} ${token.symbol}`}
+                    secondary={`$${token.balanceUsd.toFixed(2)}`}
                 />
             </ListItem>
         ))}

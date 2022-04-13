@@ -1,18 +1,14 @@
-import { BigNumberish } from 'ethers';
-
-export interface IContract {
+export interface IToken {
     address: string;
-    symbol: string;
     name: string;
-    decimals: number;
-    chainId: string;
-    logoURI: string;
-    coingeckoId: string;
-    listedIn: string[];
+    symbol: string;
+    logo: string;
+    decimals: number,
+    balance: number,
+    balanceUsd: number,
+    priceUsd: number
 }
 
-export interface IToken extends IContract {
-    tokensURI?: string;
-    balance: BigNumberish;
-    price: number;
+export interface IChain {
+    [id: string]: string
 }
