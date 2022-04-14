@@ -6,11 +6,11 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
+import Skeleton from '@mui/material/Skeleton';
 
 import TokensList from './components/TokensList';
 import SkeletonList from './components/SkeletonList';
 import { IToken, IChain } from './types';
-import Skeleton from "@mui/material/Skeleton";
 
 const API = process.env.REACT_APP_API;
 
